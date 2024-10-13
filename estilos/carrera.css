@@ -1,0 +1,57 @@
+.padre {
+    padding: 5px;
+    background-color: azure;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                         "nav    nav    nav   "
+                         "cont1  cont2  cont3 "
+                         "foot   foot   foot  ";
+}
+
+.padre .header {
+    grid-area: header;
+    font-size: 2.5rem;        /* Tamaño de la fuente */
+    color: #4CAF50;          /* Color del texto */
+    text-align: left;        /* Alineación centrada */
+    font-weight: bold;       /* Grosor de la fuente */
+}
+
+.padre .header h1:hover {
+    color: #1f1bd6; /* Cambia el color al pasar el mouse */
+}
+
+.padre .nav {
+    grid-area: nav;
+}
+
+.padre .cont1 {
+    grid-area: cont1;
+}
+
+.padre .cont2 {
+    grid-area: cont2;
+}
+
+.padre .cont3 {
+    grid-area: cont3;
+}
+
+.padre .foot {
+    grid-area: foot;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente para todo el cuerpo */
+}
+
+h2 {
+    color: #007BFF; /* Color para los títulos h2 */
+}
+
+footer {
+    position: relative; /* Asegura que el footer se posicione correctamente */
+    bottom: 0;         /* Mantiene el footer al final de la página */
+    width: 100%;      /* Asegura que el footer ocupe todo el ancho */
+}
